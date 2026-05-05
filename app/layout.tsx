@@ -22,7 +22,8 @@ export const metadata: Metadata = {
   verification: { other: { "google-site-verification": "" } },
   icons: {
     icon: [
-      { url: "/isologotipo-page3.png", type: "image/png", sizes: "any" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/isologotipo-page3.png", type: "image/png", sizes: "48x48" },
     ],
     apple: [
       { url: "/isologotipo-page3.png", type: "image/png", sizes: "180x180" },
