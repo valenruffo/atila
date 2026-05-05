@@ -26,10 +26,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://atilapadel.com" },
   robots: { index: true, follow: true },
   verification: { other: { "google-site-verification": "" } },
-  icons: {
-    icon: [{ url: "/favicon.ico", sizes: "any" }],
-    apple: [{ url: "/isologotipo-page3.png", sizes: "180x180" }],
-  },
   openGraph: {
     title: "ATILA PÁDEL — Canchas de Pádel Profesionales en Argentina | Diseño e Instalación",
     description:
@@ -38,21 +34,12 @@ export const metadata: Metadata = {
     url: "https://atilapadel.com",
     siteName: "ATILA PÁDEL",
     locale: "es_AR",
-    images: [
-      {
-        url: "/isologotipo-page3.png",
-        width: 512,
-        height: 512,
-        alt: "ATILA PÁDEL — Canchas de Pádel Profesionales",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ATILA PÁDEL — Canchas de Pádel Profesionales en Argentina",
     description:
       "Fabricamos e instalamos canchas de pádel profesionales en Argentina. Diseño personalizado, estructura certificada y césped de alto rendimiento.",
-    images: ["/isologotipo-page3.png"],
   },
   other: {
     "last-modified": "2026-05-05",
@@ -67,9 +54,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/isologotipo-page3.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/isologotipo-page3.png" />
         <style>{`
           @font-face {
             font-family: 'Praktika';
