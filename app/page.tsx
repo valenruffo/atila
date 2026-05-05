@@ -213,7 +213,7 @@ const canchas = [
     title: "MODELO COMPETITION PRO",
     subtitle: "Nuestro modelo insignia",
     description: "La máxima expresión de calidad, durabilidad y diseño. Pensada para clubes que buscan diferenciarse y llevar su proyecto a otro nivel.",
-    image: "/brochure-images/competition-pro-final.avif",
+    image: "/brochure-images/competition-pro-final-v2.webp",
     imageFit: "contain" as const,
     features: [
       "Personalización TOTAL (colores, identidad, logos, detalles)",
@@ -731,7 +731,7 @@ const products = [
     price: "$159.209",
     oldPrice: null,
     discount: null,
-    badge: "ENVÍO GRATIS",
+    badge: null,
     images: [
       "https://d1v25kychuu7fe.cloudfront.net/web-experto/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUc1QkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--12bf2ee7812900cd1ddc9d00e9f4846039ac50f9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9VY21WemFYcGxYM1J2WDJ4cGJXbDBXd2RwQW1zRE1BPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--aa8de4e355790c0144fef8391369ebad02ad8e4f/D_834340-MLA102996133909_122025-F.webp",
       "https://d1v25kychuu7fe.cloudfront.net/web-experto/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGU1QkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--15299867cb843e81052f1da456ba7ab0abb6242a/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9VY21WemFYcGxYM1J2WDJ4cGJXbDBXd2RwQW1zRE1BPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--aa8de4e355790c0144fef8391369ebad02ad8e4f/D_735572-MLA102996134051_122025-F.webp",
