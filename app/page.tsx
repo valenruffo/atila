@@ -38,14 +38,14 @@ function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-atila-gray-200 hover:text-atila-accent uppercase tracking-wider text-xs font-semibold transition-colors"
+              className="text-atila-gray-200 hover:text-atila-accent uppercase tracking-wider text-xs transition-colors"
             >
               {l.label}
             </a>
           ))}
           <a
             href="#cotizador"
-            className="bg-atila-accent text-atila-black px-5 py-2 font-bold uppercase tracking-wider text-xs hover:brightness-110 transition-all"
+            className="bg-atila-accent text-atila-black px-5 py-2 uppercase tracking-wider text-xs hover:brightness-110 transition-all"
           >
             COTIZAR
           </a>
@@ -68,7 +68,7 @@ function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="block py-3 text-atila-gray-200 hover:text-atila-accent uppercase tracking-wider text-sm font-semibold border-b border-atila-gray-700"
+              className="block py-3 text-atila-gray-200 hover:text-atila-accent uppercase tracking-wider text-sm border-b border-atila-gray-700"
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -76,7 +76,7 @@ function Navbar() {
           ))}
           <a
             href="#cotizador"
-            className="mt-4 block text-center bg-atila-accent text-atila-black px-5 py-2 font-bold uppercase tracking-wider text-xs"
+            className="mt-4 block text-center bg-atila-accent text-atila-black px-5 py-2 uppercase tracking-wider text-xs"
             onClick={() => setOpen(false)}
           >
             COTIZAR
@@ -113,10 +113,10 @@ function Hero() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 text-center pt-20">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[0.95]">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.95]">
           CANCHAS DE PÁDEL PROFESIONALES
         </h1>
-        <p className="mt-4 text-lg sm:text-xl md:text-2xl font-semibold text-atila-accent uppercase tracking-wider">
+        <p className="mt-4 text-lg sm:text-xl md:text-2xl text-atila-accent uppercase tracking-wider">
           100% PERSONALIZADAS
         </p>
         <p className="mt-6 text-base md:text-lg text-atila-gray-300 max-w-2xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ function Hero() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#cotizador"
-            className="bg-atila-accent text-atila-black px-10 py-4 font-extrabold uppercase tracking-wider text-sm hover:brightness-110 hover:scale-[1.02] transition-all"
+            className="bg-atila-accent text-atila-black px-10 py-4 uppercase tracking-wider text-sm hover:brightness-110 hover:scale-[1.02] transition-all"
           >
             SOLICITAR PRESUPUESTO
           </a>
@@ -133,7 +133,7 @@ function Hero() {
             href="https://calendly.com/atilapadel/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="border-2 border-atila-accent text-atila-accent px-10 py-4 font-extrabold uppercase tracking-wider text-sm hover:bg-atila-accent/10 transition-all"
+            className="border-2 border-atila-accent text-atila-accent px-10 py-4 uppercase tracking-wider text-sm hover:bg-atila-accent/10 transition-all"
           >
             AGENDAR VIDEOLLAMADA
           </a>
@@ -168,7 +168,7 @@ function PropuestaValor() {
   return (
     <section id="servicios" className="py-24 bg-atila-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl md:text-4xl font-extrabold uppercase tracking-tight mb-16">
+        <h2 className="text-center text-3xl md:text-4xl uppercase tracking-tight mb-16">
           POR QUÉ <span className="text-atila-accent">ELEGIRNOS</span>
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -178,7 +178,7 @@ function PropuestaValor() {
               className="bg-atila-gray-900 border border-atila-gray-700 p-8 text-center hover:border-atila-accent/50 transition-colors"
             >
               <c.icon className="mx-auto text-atila-accent" size={40} strokeWidth={1.5} />
-              <h3 className="mt-6 text-lg font-bold uppercase tracking-wider">
+              <h3 className="mt-6 text-lg uppercase tracking-wider">
                 {c.title}
               </h3>
               <p className="mt-3 text-atila-gray-400 text-sm leading-relaxed">{c.text}</p>
@@ -231,7 +231,7 @@ function Canchas() {
   return (
     <section id="canchas" className="py-24 bg-atila-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl md:text-4xl font-extrabold uppercase tracking-tight mb-4">
+        <h2 className="text-center text-3xl md:text-4xl uppercase tracking-tight mb-4">
           NUESTROS <span className="text-atila-accent">MODELOS</span>
         </h2>
         <p className="text-center text-atila-gray-400 mb-16 max-w-2xl mx-auto">
@@ -253,7 +253,7 @@ function Canchas() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-atila-gray-900/80 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-atila-accent font-extrabold uppercase tracking-widest text-lg">{c.title}</h3>
+                  <h3 className="text-atila-accent uppercase tracking-widest text-lg">{c.title}</h3>
                   <p className="text-atila-gray-200 text-xs uppercase tracking-wider">{c.subtitle}</p>
                 </div>
               </div>
@@ -326,8 +326,8 @@ function CarouselGallery() {
         {/* Editorial header */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
           <div>
-            <span className="text-atila-accent text-xs font-bold uppercase tracking-[0.3em]">Detalle constructivo</span>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold uppercase tracking-tight leading-[0.95]">
+            <span className="text-atila-accent text-xs uppercase tracking-[0.3em]">Detalle constructivo</span>
+            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight leading-[0.95]">
               EXPERIENCIA PREMIUM<br />
               <span className="text-atila-accent">EN CADA DETALLE</span>
             </h2>
@@ -336,7 +336,7 @@ function CarouselGallery() {
             </p>
             <div className="mt-8 flex items-center gap-3">
               <span className="block h-px w-12 bg-atila-accent" />
-              <span className="text-atila-accent text-xs font-bold uppercase tracking-wider">Calidad certificada</span>
+              <span className="text-atila-accent text-xs uppercase tracking-wider">Calidad certificada</span>
             </div>
           </div>
 
@@ -352,7 +352,7 @@ function CarouselGallery() {
                   sizes="33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-atila-black/70 to-transparent" />
-                <span className="absolute top-3 left-3 text-[9px] font-bold uppercase tracking-widest text-atila-accent bg-atila-black/60 px-2 py-1">
+                <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest text-atila-accent bg-atila-black/60 px-2 py-1">
                   {img.model}
                 </span>
                 <p className="absolute bottom-3 left-3 right-3 text-atila-gray-200 text-[11px] uppercase tracking-wider leading-snug">
@@ -383,7 +383,7 @@ function CarouselGallery() {
                   sizes="80vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-atila-black/70 to-transparent" />
-                <span className="absolute top-3 left-3 text-[9px] font-bold uppercase tracking-widest text-atila-accent bg-atila-black/60 px-2 py-1">
+                <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest text-atila-accent bg-atila-black/60 px-2 py-1">
                   {img.model}
                 </span>
                 <p className="absolute bottom-3 left-3 right-3 text-atila-gray-200 text-[11px] uppercase tracking-wider leading-snug">
@@ -412,7 +412,7 @@ function CarouselGallery() {
                 sizes="33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-atila-black/70 to-transparent" />
-              <span className="absolute top-3 left-3 text-[9px] font-bold uppercase tracking-widest text-atila-accent bg-atila-black/60 px-2 py-1">
+              <span className="absolute top-3 left-3 text-[9px] uppercase tracking-widest text-atila-accent bg-atila-black/60 px-2 py-1">
                 {img.model}
               </span>
               <p className="absolute bottom-3 left-3 right-3 text-atila-gray-200 text-[11px] uppercase tracking-wider leading-snug">
@@ -490,7 +490,7 @@ function Cotizador() {
   return (
     <section id="cotizador" className="py-24 bg-atila-black">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl md:text-4xl font-extrabold uppercase tracking-tight mb-4">
+        <h2 className="text-center text-3xl md:text-4xl uppercase tracking-tight mb-4">
           COTIZÁ <span className="text-atila-accent">TU CANCHA</span>
         </h2>
         <p className="text-center text-atila-gray-400 mb-12">
@@ -581,14 +581,14 @@ function Cotizador() {
           {/* Submit */}
           {submitted ? (
             <div className="bg-atila-accent/10 border border-atila-accent/40 p-6 text-center animate-fade-in-up">
-              <p className="text-atila-accent font-bold text-lg">
+              <p className="text-atila-accent text-lg">
                 ¡Tu solicitud fue enviada! Te contactamos en 24hs para detallar tu cotización.
               </p>
             </div>
           ) : (
             <button
               type="submit"
-              className="w-full bg-atila-accent text-atila-black py-4 font-extrabold uppercase tracking-wider text-sm hover:brightness-110 hover:scale-[1.02] transition-all"
+              className="w-full bg-atila-accent text-atila-black py-4 uppercase tracking-wider text-sm hover:brightness-110 hover:scale-[1.02] transition-all"
               aria-label="Obtener presupuesto"
             >
               OBTENER PRESUPUESTO
@@ -607,7 +607,7 @@ function TiendaHeader() {
   return (
     <section id="tienda" className="pt-24 pb-4 bg-atila-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight">
+        <h2 className="text-3xl md:text-4xl uppercase tracking-tight">
           TIENDA OFICIAL ATILA: PALETAS Y ACCESORIOS DE <span className="text-atila-accent">ALTA CALIDAD</span>
         </h2>
         <p className="mt-4 text-atila-gray-400 max-w-2xl mx-auto">
@@ -758,12 +758,12 @@ function ProductCard({ product }: { product: (typeof products)[number] }) {
           unoptimized
         />
         {product.badge && (
-          <span className="absolute top-3 left-3 z-10 bg-atila-accent text-atila-black text-[10px] font-bold uppercase tracking-wider px-2.5 py-1">
+          <span className="absolute top-3 left-3 z-10 bg-atila-accent text-atila-black text-[10px] uppercase tracking-wider px-2.5 py-1">
             {product.badge}
           </span>
         )}
         {product.discount && (
-          <span className="absolute top-3 right-3 z-10 bg-red-500 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1">
+          <span className="absolute top-3 right-3 z-10 bg-red-500 text-white text-[10px] uppercase tracking-wider px-2 py-1">
             {product.discount}
           </span>
         )}
@@ -799,12 +799,12 @@ function ProductCard({ product }: { product: (typeof products)[number] }) {
         )}
       </div>
       <div className="p-5 flex flex-col flex-1">
-        <h3 className="font-bold text-sm uppercase tracking-wider leading-snug mb-2">
+        <h3 className="text-sm uppercase tracking-wider leading-snug mb-2">
           {product.name}
         </h3>
         <div className="mt-auto">
           <div className="flex items-baseline gap-2">
-            <p className="text-atila-accent font-bold text-xl">{product.price}</p>
+            <p className="text-atila-accent text-xl">{product.price}</p>
             {product.oldPrice && (
               <p className="text-atila-gray-500 text-sm line-through">{product.oldPrice}</p>
             )}
@@ -814,7 +814,7 @@ function ProductCard({ product }: { product: (typeof products)[number] }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Ver ${product.name} en Gravedad X`}
-            className="mt-4 flex items-center justify-center gap-2 bg-atila-accent text-atila-black hover:brightness-110 w-full py-3 font-bold uppercase tracking-wider text-xs transition-colors"
+            className="mt-4 flex items-center justify-center gap-2 bg-atila-accent text-atila-black hover:brightness-110 w-full py-3 uppercase tracking-wider text-xs transition-colors"
           >
             <ShoppingBag size={16} />
             COMPRAR
@@ -860,7 +860,7 @@ function Resenas() {
       }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl md:text-4xl font-extrabold uppercase tracking-tight mb-16">
+        <h2 className="text-center text-3xl md:text-4xl uppercase tracking-tight mb-16">
           NUESTRO TRABAJO <span className="text-atila-accent">EN ACCIÓN</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -912,7 +912,7 @@ function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs uppercase tracking-widest font-bold mb-4">Contacto</h4>
+            <h4 className="text-xs uppercase tracking-widest mb-4">Contacto</h4>
             <div className="space-y-3 text-sm text-atila-gray-400">
               <a href="mailto:info@atilapadel.com" className="flex items-center gap-2 hover:text-atila-accent transition-colors">
                 <Mail size={16} /> info@atilapadel.com
@@ -928,7 +928,7 @@ function Footer() {
 
           {/* Social */}
           <div>
-            <h4 className="text-xs uppercase tracking-widest font-bold mb-4">Seguinos</h4>
+            <h4 className="text-xs uppercase tracking-widest mb-4">Seguinos</h4>
             <div className="space-y-3">
               <a
                 href="https://www.instagram.com/atilapadel/"
