@@ -214,7 +214,7 @@ const canchas = [
     title: "MODELO COMPETITION PRO",
     subtitle: "Nuestro modelo insignia",
     description: "La máxima expresión de calidad, durabilidad y diseño. Pensada para clubes que buscan diferenciarse y llevar su proyecto a otro nivel.",
-    image: "/brochure-images/page5_img1.jpeg",
+    image: "/brochure-images/competition-pro-final.avif",
     imageFit: "contain" as const,
     features: [
       "Personalización TOTAL (colores, identidad, logos, detalles)",
@@ -931,14 +931,15 @@ function Footer() {
           <p className="text-atila-gray-500 text-xs uppercase tracking-wider">
             © {new Date().getFullYear()} ATILA PÁDEL. Todos los derechos reservados.
           </p>
-          <div className="mt-4 flex items-center justify-center gap-2">
-            <span className="text-atila-gray-600 text-xs uppercase tracking-wider">Powered by</span>
+          <div className="mt-3 flex items-center justify-center gap-1.5">
+            <span className="text-atila-gray-600 text-[10px] uppercase tracking-wider">Powered by</span>
             <Image
               src="/moveup-logo.png"
               alt="MoveUp"
-              width={80}
-              height={24}
-              className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity"
+              width={50}
+              height={15}
+              className="h-4 w-auto opacity-50 hover:opacity-80 transition-opacity"
+              unoptimized
             />
           </div>
         </div>
