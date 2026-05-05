@@ -19,7 +19,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-atila-black/90 backdrop-blur-md border-b border-atila-gray-700">
+    <nav role="banner" className="fixed top-0 left-0 right-0 z-50 bg-atila-black/90 backdrop-blur-md border-b border-atila-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="#inicio" className="flex items-center gap-2">
           <Image
@@ -893,7 +893,7 @@ function Resenas() {
 /* ------------------------------------------------------------------ */
 function Footer() {
   return (
-    <footer id="contacto" className="bg-atila-gray-900 border-t border-atila-gray-700">
+    <footer role="contentinfo" id="contacto" className="bg-atila-gray-900 border-t border-atila-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
@@ -1054,8 +1054,8 @@ function JsonLd() {
       "https://www.tiktok.com/@atilapadel",
       "https://www.youtube.com/@atilapadel/videos",
     ],
-    priceRange: "$$",
-    image: "https://atilapadel.com/isologotipo-page3.png",
+    priceRange: "$$$",
+    image: "https://atilapadel.com/logoFinalBlanco.png",
   };
 
   const organization = {
@@ -1087,6 +1087,12 @@ function JsonLd() {
 export default function Page() {
   return (
     <main className="min-h-screen">
+      <a
+        href="#inicio"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-atila-accent focus:text-atila-black focus:px-4 focus:py-2 focus:text-sm focus:uppercase focus:tracking-wider focus:rounded"
+      >
+        Ir al contenido principal
+      </a>
       <JsonLd />
       <Navbar />
       <Hero />

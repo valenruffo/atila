@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://atilapadel.com"),
   title: "ATILA PÁDEL — Canchas de Pádel Profesionales en Argentina | Diseño e Instalación",
   description:
     "Fabricamos e instalamos canchas de pádel profesionales en Argentina. Diseño personalizado, estructura certificada y césped de alto rendimiento. Solicitá tu presupuesto.",
+  applicationName: "ATILA PÁDEL",
+  authors: [{ name: "ATILA PÁDEL", url: "https://atilapadel.com" }],
+  category: "Deportes",
   keywords: [
     "canchas de pádel",
     "canchas de pádel en Argentina",
@@ -29,6 +33,24 @@ export const metadata: Metadata = {
     description:
       "Fabricamos e instalamos canchas de pádel profesionales en Argentina. Diseño personalizado, estructura certificada y césped de alto rendimiento.",
     type: "website",
+    url: "https://atilapadel.com",
+    siteName: "ATILA PÁDEL",
+    locale: "es_AR",
+    images: [
+      {
+        url: "/isologotipo-page3.png",
+        width: 512,
+        height: 512,
+        alt: "ATILA PÁDEL — Canchas de Pádel Profesionales",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ATILA PÁDEL — Canchas de Pádel Profesionales en Argentina",
+    description:
+      "Fabricamos e instalamos canchas de pádel profesionales en Argentina. Diseño personalizado, estructura certificada y césped de alto rendimiento.",
+    images: ["/isologotipo-page3.png"],
   },
 };
 
