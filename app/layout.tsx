@@ -49,16 +49,61 @@ export default function RootLayout({
             font-family: 'Praktika';
             src: url('/fonts/Praktika-Light.woff2') format('woff2'),
                  url('/fonts/Praktika-Light.woff') format('woff');
-            font-weight: 300 400;
+            font-weight: 300;
             font-style: normal;
-            font-display: swap;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Praktika';
+            src: url('/fonts/Praktika-Light.woff2') format('woff2'),
+                 url('/fonts/Praktika-Light.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Praktika';
+            src: url('/fonts/Praktika-Light.woff2') format('woff2'),
+                 url('/fonts/Praktika-Light.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Praktika';
+            src: url('/fonts/Praktika-Light.woff2') format('woff2'),
+                 url('/fonts/Praktika-Light.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Praktika';
+            src: url('/fonts/Praktika-Light.woff2') format('woff2'),
+                 url('/fonts/Praktika-Light.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Praktika';
+            src: url('/fonts/Praktika-Light.woff2') format('woff2'),
+                 url('/fonts/Praktika-Light.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: block;
+          }
+          @font-face {
+            font-family: 'Praktika';
+            src: url('/fonts/Praktika-Light.woff2') format('woff2'),
+                 url('/fonts/Praktika-Light.woff') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            font-display: block;
           }
           body {
             font-family: 'Praktika', sans-serif;
             font-weight: 300;
-            text-rendering: optimizeLegibility;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
           }
         `}</style>
       </head>
