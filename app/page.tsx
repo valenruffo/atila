@@ -461,7 +461,7 @@ function Cotizador() {
     return Object.keys(e).length === 0;
   }
 
-  function handleSubmit(e: FormEvent) {
+function handleSubmit(e: FormEvent) {
     e.preventDefault();
     if (!validate()) return;
 
@@ -475,6 +475,11 @@ function Cotizador() {
 ¡Gracias!`;
 
     const url = `https://wa.me/5493415607480?text=${encodeURIComponent(mensaje)}`;
+
+    gtag("event", "conversion", {
+      send_to: "AW-18158784121/rNYtCNXr76scEPmc5NJD",
+    });
+
     window.open(url, "_blank");
 
     setSubmitted(true);
@@ -988,8 +993,15 @@ function Footer() {
 /*  FLOATING WHATSAPP                                                   */
 /* ------------------------------------------------------------------ */
 function FloatingWhatsApp() {
+  const handleClick = () => {
+    gtag("event", "conversion", {
+      send_to: "AW-18158784121/rNYtCNXr76scEPmc5NJD",
+    });
+  };
+
   return (
     <a
+      onClick={handleClick}
       href="https://wa.me/5493415607480"
       target="_blank"
       rel="noopener noreferrer"

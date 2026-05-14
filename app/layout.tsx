@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -58,6 +59,13 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://atilapadel.com/isologotipo-page3.png" />
         <meta name="twitter:title" content="ATILA PÁDEL — Canchas de Pádel Profesionales en Argentina" />
         <meta name="twitter:description" content="Fabricamos e instalamos canchas de pádel profesionales en Argentina." />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-18158784121" strategy="afterInteractive" />
+        <Script id="google-ads-config" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-18158784121');
+        `}</Script>
         <style>{`
           @font-face {
             font-family: 'Praktika';
